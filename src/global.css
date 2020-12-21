@@ -1,0 +1,14 @@
+
+body{
+    /* 去除滚动条的宽度 */
+    overflow: hidden;
+}
+.page{
+    display: flex;
+    flex-wrap: wrap;
+}
+section{
+    width: 50vw;
+    height: 50vh;
+    border: 1px solid grey;
+}

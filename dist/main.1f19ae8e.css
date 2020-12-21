@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+ol,
+ul {
+  list-style: none;
+}
+
+
+body{
+    /* 去除滚动条的宽度 */
+    overflow: hidden;
+}
+.page{
+    display: flex;
+    flex-wrap: wrap;
+}
+section{
+    width: 50vw;
+    height: 50vh;
+    border: 1px solid grey;
+}
+#app1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+#app1 h3 {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  border-bottom: 1px solid #000;
+  text-align: center;
+}
+button {
+  border: none;
+  padding: 2vw 3vw;
+  outline: none;
+}
+button:hover {
+  background-color: pink;
+  transition: all 0.5s;
+}
+
+#app2 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+#app2 h3 {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  border-bottom: 1px solid #000;
+  text-align: center;
+}
+.tab-bar {
+  display: flex;
+  width: 100%;
+}
+.tab-bar li {
+  width: 33.3%;
+  padding:12px 0;
+  text-align: center;
+  cursor: pointer;
+}
+
+.tab-bar > li.selected {
+  background: rgb(143, 227, 238);
+  color: white;
+}
+.tab-content{
+  width: 100%;
+  position: absolute;
+  top: 60%;
+}
+.tab-content li {
+  display: none;
+}
+.tab-content .active {
+  display: block;
+}
+
+#app3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+#app3 h3 {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  border-bottom: 1px solid #000;
+  text-align: center;
+}
+.square {
+  width: 10vw;
+  height: 10vw;
+  background-color: aquamarine;
+
+  transition: transform 1s;
+}
+
+.square.active {
+  transform: translateX(16vw);
+}
+
+#app4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+  }
+  #app4 h3 {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    border-bottom: 1px solid #000;
+    text-align: center;
+  }
+.circle {
+  width: 10vw;
+  height: 10vw;
+  border-radius: 50%;
+  border: 1px solid #000;
+  
+}
+.circle.active{
+    animation: changeColor 5s infinite alternate linear;
+    border: none;
+}
+@keyframes changeColor {
+  from {
+    background-color: rgb(255, 174, 0);
+  }
+  to {
+    background-color: rgb(226, 43, 195);
+  }
+}
+
+
+/*# sourceMappingURL=/main.1f19ae8e.css.map */

@@ -1,0 +1,23 @@
+#app1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+#app1 h3 {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  border-bottom: 1px solid #000;
+  text-align: center;
+}
+button {
+  border: none;
+  padding: 2vw 3vw;
+  outline: none;
+}
+button:hover {
+  background-color: pink;
+  transition: all 0.5s;
+}

@@ -1,0 +1,33 @@
+#app4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+  }
+  #app4 h3 {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    border-bottom: 1px solid #000;
+    text-align: center;
+  }
+.circle {
+  width: 10vw;
+  height: 10vw;
+  border-radius: 50%;
+  border: 1px solid #000;
+  
+}
+.circle.active{
+    animation: changeColor 5s infinite alternate linear;
+    border: none;
+}
+@keyframes changeColor {
+  from {
+    background-color: rgb(255, 174, 0);
+  }
+  to {
+    background-color: rgb(226, 43, 195);
+  }
+}

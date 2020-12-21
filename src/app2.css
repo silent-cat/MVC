@@ -1,0 +1,40 @@
+#app2 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+#app2 h3 {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  border-bottom: 1px solid #000;
+  text-align: center;
+}
+.tab-bar {
+  display: flex;
+  width: 100%;
+}
+.tab-bar li {
+  width: 33.3%;
+  padding:12px 0;
+  text-align: center;
+  cursor: pointer;
+}
+
+.tab-bar > li.selected {
+  background: rgb(143, 227, 238);
+  color: white;
+}
+.tab-content{
+  width: 100%;
+  position: absolute;
+  top: 60%;
+}
+.tab-content li {
+  display: none;
+}
+.tab-content .active {
+  display: block;
+}

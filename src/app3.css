@@ -1,0 +1,24 @@
+#app3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+#app3 h3 {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  border-bottom: 1px solid #000;
+  text-align: center;
+}
+.square {
+  width: 10vw;
+  height: 10vw;
+  background-color: aquamarine;
+
+  transition: transform 1s;
+}
+
+.square.active {
+  transform: translateX(16vw);
+}
